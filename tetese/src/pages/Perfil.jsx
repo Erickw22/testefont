@@ -60,7 +60,7 @@ const Perfil = () => {
     navigate('/home');
   };
 
-  // Mostrar loading enquanto busca dados caso denm
+  // Mostrar loading enquanto busca dados do usuário
   if (loading) {
     return <div className="profile-container">Carregando...</div>;
   }

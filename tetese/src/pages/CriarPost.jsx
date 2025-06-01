@@ -3,7 +3,6 @@ import { useNavigate } from 'react-router-dom';
 import "../styles/CriarPost.css";
 import axios from 'axios';
 
-// Base URL da API
 const api = axios.create({
   baseURL: 'http://localhost:5000/posts'
 });

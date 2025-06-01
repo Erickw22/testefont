@@ -27,7 +27,7 @@ const Home = () => {
 
   const handleLogout = () => {
     localStorage.clear();
-    navigate('/login'); // padrão: rota login em minúsculas
+    navigate('/login'); 
   };
 
   return (

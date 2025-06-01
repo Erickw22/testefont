@@ -20,13 +20,13 @@ const Login = () => {
     setError("");
     setIsLoading(true);
     try {
-      // URL corrigida para o endpoint auth/login
+      // URL para o endpoint auth/login
       const res = await axios.post("http://localhost:5000/auth/login", formData);
 
       // Armazena o token JWT recebido
       localStorage.setItem("token", res.data.token);
 
-      // Redireciona para home (minúsculo para padronizar)
+      // Redireciona para home 
       navigate("/home");
     } catch (err) {
       setError(

@@ -24,7 +24,7 @@ const Cadastro = () => {
     setIsLoading(true);
 
     try {
-      // Endpoint corrigido para o padrão auth/register
+      // Endpoint para o padrão auth/register
       await axios.post('http://localhost:5000/auth/register', formData);
       navigate('/login');
     } catch (err) {
